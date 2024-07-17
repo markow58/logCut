@@ -15,9 +15,9 @@ PROGRAM _CYCLIC
 		processParIdData.ParID := mcACPPAR_BRAKE_MODE;
 		processParIdData.VariableAddress := ADR(brakeMode);
 	ELSE
-			processParIdData.DataType := mcACPAX_PARTYPE_REAL;
-	processParIdData.ParID := mcACPPAR_MOTOR_BRAKE_TORQ_RATED;
-	processParIdData.VariableAddress := ADR(brakeRatedTrq);
+		processParIdData.DataType := mcACPAX_PARTYPE_REAL;
+		processParIdData.ParID := mcACPPAR_MOTOR_BRAKE_TORQ_RATED;
+		processParIdData.VariableAddress := ADR(brakeRatedTrq);
 	END_IF
 	
 	MpAxisBasic_0(MpLink := ADR(gAxisMaster), Enable := TRUE, Parameters := ADR(AxisPar));
