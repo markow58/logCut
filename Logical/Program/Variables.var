@@ -1,0 +1,16 @@
+VAR
+	MpAxisBasic_0 : MpAxisBasic;
+	AxisPar : MpAxisBasicParType := (Distance:=30,Velocity:=180,Acceleration:=720,Deceleration:=720);
+	MpAxisBasic_1 : MpAxisBasic;
+	MpAxisCoupling_0 : MpAxisCoupling;
+	CouplingPar : MpAxisCouplingParType := (Gear:=(Acceleration:=720,Deceleration:=720));
+	MpAxisCamSequencer_0 : MpAxisCamSequencer;
+	SequencerPar : MpAxisCamSequencerParType;
+	MpAxisBasic_2 : MpAxisBasic;
+	MC_BR_GetAxisLibraryInfo_0 : MC_BR_GetAxisLibraryInfo;
+	MC_BR_ProcessParID_AcpAx_0 : MC_BR_ProcessParID_AcpAx;
+	processParIdData : McAcpAxProcessParIDType;
+	brakeRatedTrq : REAL;
+	readMode : BOOL;
+	brakeMode : UINT;
+END_VAR
